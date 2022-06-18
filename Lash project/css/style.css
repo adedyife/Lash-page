@@ -1,0 +1,160 @@
+body{
+    background-color: aliceblue;
+    
+}
+p{
+    color: #000;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    /*background-color: rgb(128, 0, 128);*/
+    background: linear-gradient(to right, rgba(128, 0, 128, 0.3), rgb(128, 0, 128) );
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    text-transform: capitalize;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial', 'sans-serif';
+   
+
+}
+img {
+    display: inline-block;
+    justify-self: flex-start;
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    border-radius: 20px;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 20px;
+    text-decoration: none;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    transition: all 500ms ease-in-out ;
+}
+nav ul li a:hover{
+    font-size: 17px;
+    text-shadow: 3px 3px black;
+    font-weight: bold;
+}
+.main{
+   /* background-color: rgba(128, 0, 128,0.3);*/
+    background-image:url("../images/lash1.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    animation: mainslideshow 8s linear alternate infinite;
+    font-size: 80px;
+    
+    text-transform: capitalize;
+    color: rgb(128, 0, 128);
+    font-weight: bold;
+
+}
+h1{
+    font-size: 80px;
+    font-family: 'Kaushan Script', cursive;
+}
+.lash{
+    font-family: 'Kaushan Script', cursive;
+    transition: all 300ms ease-in;
+}
+.lash:hover{
+    font-size: 81px;
+    text-shadow: 2px 2px rgba(128, 0, 128,0.5);
+    font-family: 'Kaushan Script', cursive;
+}
+
+.explore{
+    font-size: 30px;
+    background-color: rgba(251, 251, 251, 0.5);
+    font-family: 'Times New Roman', Times, serif;
+    padding: 1px;
+    border: solid;
+    border: 15px;
+    color: #000;
+    transition: all 500ms ease-in;
+    align-self: center;
+}
+.explore:hover{
+    background-color:rgba(251, 251, 251, 0.9);
+}
+#about{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+   /*background-color: rgba(191, 111, 225, 0.9);*/
+   background: linear-gradient(to bottom, rgba(191, 111, 225, 0.9),rgba(191, 111, 225, 0.5), rgba(191, 111, 225, 0.9));
+    width: 100%;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.about-us{
+    padding: 10px;
+}
+.header2{
+    align-self: start;
+    grid-row:1/4;
+}
+
+#details{
+   /* background: radial-gradient(circle, rgba(128, 0, 128, 0.6)80%, rgb(128, 0, 128) );*/
+   background: rgb(191, 111, 225);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.deet{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+}
+
+#contact{
+    width: 100%;
+    height: 30vh;
+    background: rgba(128, 0, 128,0.8);
+    display: flex;
+    flex-direction: column;
+}
+
+.form{
+align-self: flex-end;
+padding: 4px;
+}
+.form-item{
+    color:white ;
+}
+.form-check{
+    display: inline;
+    color: rgb(250, 248, 248);
+    font-style: italic;
+    font-size: small;
+}
+
+
+@keyframes mainslideshow {
+    50% {background-image: url("../Images/lash3.jfif"); background-repeat: no-repeat;
+    background-size:cover;}
+    100% {background-image: url("../Images/lash4.jpg"); background-repeat: no-repeat;
+    background-size:cover;}
+}
